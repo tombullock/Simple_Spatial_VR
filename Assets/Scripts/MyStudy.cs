@@ -200,18 +200,12 @@ public class MyStudy : MonoBehaviour
 
                     // assign color to target sphere 
                     targetColorIdx = trialSequences.oddball_data[sxr.GetTrial()]; // get stimulus color for this trial
-                    if (targetColorIdx == 0)
-                    {
-                        targetSphereRenderer.material.SetColor("_Color", greenColor);
-                    }
+                    if (targetColorIdx == 0)                  
+                        targetSphereRenderer.material.SetColor("_Color", greenColor);                
                     else if (targetColorIdx == 1)
-                    {
                         targetSphereRenderer.material.SetColor("_Color", blueColor);
-                    }
                     else if (targetColorIdx == 2)
-                    {
                         targetSphereRenderer.material.SetColor("_Color", redColor);
-                    }
 
                     // TIMING TEST - OVERRIDE TO MAKE SPHERE WHITE
                     //targetSphereRenderer.material.SetColor("_Color", whiteColor);
